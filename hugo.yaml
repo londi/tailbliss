@@ -47,7 +47,7 @@ markup:
 
 params:
   author: Leon
-  authorimage: ../assets/images/global/author.webp
+  authorimage: ../assets/images/global/leon-cover.webp
   og_image: "/images/pages/leon-cover.webp"
   moto: "Personal blog and project showroom"
   description: "Hi and welcome to my website! Here I show you my ongoing projects and my experience with all kinds of technologies that I encounter in my everyday life."

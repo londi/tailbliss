@@ -1,0 +1,13 @@
+<!-- layouts/shortcodes/bigframe.html -->
+<iframe id="bigframe" src="{{ .Get 0 }}" style="width: 100%; height: 50vh; border: none; overflow: hidden;"></iframe>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const iframe = document.getElementById('bigframe');
+        iframe.onload = function() {
+            const iframeWindow = iframe.contentWindow || iframe.contentDocument.parentWindow;
+            if (iframeWindow.document.body) {
+                iframe.height = iframeWindow.document.documentElement.scrollHeight || iframeWindow.document.body.scrollHeight;
+            }
+        };
+    });
+</script>
