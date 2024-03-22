@@ -70,11 +70,31 @@ params:
       - text: "In my opinion, a healthy mix is the key to any successful project. Do not reinvent the wheel, but check whether a new approach leads to success more efficiently."
   p3:
     heading: "Leon's projects"
+    image: "images/pages/leon-look-bottom.webp"
     content:
       - text: "If you are interested in my projects and want to know more about what they are and what technologies they involve, take a look at my project page."
     links:
       - text: Take a look at my projects
         url: "/projects"
+    logos:
+      - identifier: a
+        image: "images/global/iot.webp"
+        alt: ""
+      - identifier: b
+        image: "images/global/app.webp"
+        alt: ""
+      - identifier: c
+        image: "images/global/drone.webp"
+        alt: ""
+      - identifier: d
+        image: "images/global/roboterarm.webp"
+        alt: ""
+      - identifier: e
+        image: "images/global/server.webp"
+        alt: ""
+      - identifier: f
+        image: "images/global/computer.webp"
+        alt: ""
   p4:
     heading: "From the blog"
     content:
@@ -160,22 +180,22 @@ menu:
 #      url: "#"
 #      weight: 30
   footer:
-    - identifier: about
-      name: About
-      url: /about/
+    - identifier: disclaimer
+      name: Disclaimer
+      url: /disclaimer/
       weight: 10
     - identifier: blog
       name: Blog
       url: /categories/blog/
       weight: 20
-    - identifier: news
-      name: News
-      url: /categories/news/
-      weight: 30
-    - identifier: prose
-      name: Prose
-      url: /prose/
-      weight: 40
+#    - identifier: news
+#      name: News
+#      url: /categories/news/
+#      weight: 30
+#    - identifier: prose
+#      name: Prose
+#      url: /prose/
+#      weight: 40
     - identifier: contact
       name: Contact
       url: /contact/
