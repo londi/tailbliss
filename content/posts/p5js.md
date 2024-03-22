@@ -2,8 +2,8 @@
 title: "P5js and a new game"
 date: "2022-12-11"
 author: "Leon"
-authorimage: ../assets/images/global/leon-cover.webp
-featured_image: ../assets/images/posts/spaceGame.gif
+authorimage: images/global/leon-cover.webp
+featured_image: images/posts/spaceGame.gif
 tags: ["p5js", "JavaScript", "Games"]
 keywords: ["Game", "Browser Games"]
 summary: Building a small JS Game. Teaser for an upcoming project.

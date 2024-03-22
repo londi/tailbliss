@@ -2,8 +2,8 @@
 title: Automate the website deployment
 date: 2023-04-04T22:00:00.000Z
 author: Leon
-authorimage: ../assets/images/global/leon-cover.webp
-featured_image: ../assets/images/posts/cable-car-cabin.gif
+authorimage: images/global/leon-cover.webp
+featured_image: images/posts/cable-car-cabin.gif
 coverCredit: Cabelcar symbol picture
 imgAuthor: Freepik
 imgAuthorUrl: 'https://www.flaticon.com/free-animated-icons/cable-car-cabin'

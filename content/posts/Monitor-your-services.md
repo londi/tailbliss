@@ -2,8 +2,8 @@
 title: Monitor your services
 date: 2024-01-01T22:00:00.000Z
 author: Leon
-authorimage: ../assets/images/global/leon-cover.webp
-featured_image: ../assets/images/posts/cows.webp
+authorimage: images/global/leon-cover.webp
+featured_image: images/posts/cows.webp
 coverCredit: Cows that eat flowers on a grass yard.
 imgAuthor: DALL - E
 imgAuthorUrl: 'https://openai.com/dall-e-3'

@@ -1,10 +1,15 @@
 {
-  "name": "TailBliss",
+  "name": "leonluethi-2024",
   "version": "0.1.1",
   "description": "Hugo + Alpine.js + TailwindCSS",
   "main": "index.js",
+  "dependencies": {
+    "@tinacms/cli": "^1.5.39",
+    "tinacms": "^1.5.28"
+  },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.10",
+    "@types/node": "^20.11.30",
     "alpinejs": "^3.13.5",
     "autoprefixer": "^10.4.17",
     "concurrently": "^8.2.2",

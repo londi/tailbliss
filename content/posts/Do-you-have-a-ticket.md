@@ -2,8 +2,8 @@
 title: Do you have a ticket?
 date: 2024-01-03T22:00:00.000Z
 author: Leon
-authorimage: ../assets/images/global/leon-cover.webp
-featured_image: ../assets/images/posts/ticket-baum-640.webp
+authorimage: images/global/leon-cover.webp
+featured_image: images/posts/ticket-baum-640.webp
 coverCredit: A tree with cinema-tickets as leafs.
 imgAuthor: DALL - E
 imgAuthorUrl: 'https://openai.com/dall-e-3'

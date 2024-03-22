@@ -2,8 +2,8 @@
 title: 'Know all bugs of your users '
 date: 2024-02-10T23:00:00.000Z
 author: Leon
-authorimage: ../assets/images/global/leon-cover.webp
-featured_image: ../assets/images/posts/sentry_symbol_image.webp
+authorimage: images/global/leon-cover.webp
+featured_image: images/posts/sentry_symbol_image.webp
 coverCredit: Three triangle stickmans talking to each other while constructing a building
 imgAuthor: DALL - E
 imgAuthorUrl: 'https://openai.com/dall-e-3'

@@ -2,8 +2,8 @@
 title: "Project - DNS Checker"
 date: "2023-03-18"
 author: "Leon"
-authorimage: ../assets/images/global/leon-cover.webp
-featured_image: ../assets/images/projects/squirrel.jpg
+authorimage: images/global/leon-cover.webp
+featured_image: images/projects/squirrel.jpg
 tags: ["python", "server", "dns"]
 keywords: ["Python", "DNS"]
 summary: Public IP changed? Update your DNS settings automatically...

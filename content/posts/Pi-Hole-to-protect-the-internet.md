@@ -2,8 +2,8 @@
 title: Pi Hole to protect your network
 date: 2023-08-31T22:00:00.000Z
 author: Leon
-authorimage: ../assets/images/global/leon-cover.webp
-featured_image: ../assets/images/posts/pi-wall.webp
+authorimage: images/global/leon-cover.webp
+featured_image: images/posts/pi-wall.webp
 coverCredit: Garden wall that looks like a firewall made of a raspberry pie
 imgAuthor: DALL - E
 imgAuthorUrl: 'https://openai.com/dall-e-3'

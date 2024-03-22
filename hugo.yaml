@@ -186,7 +186,7 @@ menu:
       weight: 10
     - identifier: blog
       name: Blog
-      url: /categories/blog/
+      url: /posts/
       weight: 20
 #    - identifier: news
 #      name: News
@@ -206,27 +206,27 @@ taxonomies:
   tag: Tags
 
 privacy:
-  disqus:
-    disable: false
-  googleAnalytics:
-    anonymizeIP: true
-    disable: false
-    respectDoNotTrack: false
-    useSessionStorage: false
-  instagram:
-    disable: false
-    simple: false
-  twitter:
-    disable: false
-    enableDNT: false
-    simple: false
-  vimeo:
-    disable: false
-    enableDNT: false
-    simple: false
-  youtube:
-    disable: false
-    privacyEnhanced: true
+#  disqus:
+#    disable: false
+#  googleAnalytics:
+#    anonymizeIP: true
+#    disable: false
+#    respectDoNotTrack: false
+#    useSessionStorage: false
+#  instagram:
+#    disable: false
+#    simple: false
+#  twitter:
+#    disable: false
+#    enableDNT: false
+#    simple: false
+#  vimeo:
+#    disable: false
+#    enableDNT: false
+#    simple: false
+#  youtube:
+#    disable: false
+#    privacyEnhanced: true
 
 module:
   hugoVersion:

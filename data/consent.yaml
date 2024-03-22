@@ -1,0 +1,5 @@
+items:
+  - title: Spiel- & Funktionsstand Cookies
+    description: Für gewisse Spiele und Tools (gehostet auf dieser Website auf einem Server mit Standort "Schweiz") werden anonym Daten lokal in Cookies gespeichert um den Spiel- & Funktionsstand festzuhalten. Es gelten die Bestimmungen der schweizerischen DSGVO.
+    is_functional: false
+    script_file: noscript.js
