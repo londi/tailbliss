@@ -56,6 +56,8 @@ jobs:
 #        run: npx tinacms build
       - name: remove gitignore of admin folder in static
         run: rm -f ./static/admin/.gitignore
+      - name: update hugo modules
+        run: hugo mod get -u
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules
