@@ -31,4 +31,16 @@ EmojiSymbols;
     justify-content: center;
 }
 
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+
+    img {
+        max-width: 300px;
+        height: auto;
+    }
+}
+
 /* Custom CSS end */
