@@ -1,72 +1,58 @@
-<style>
+<section class="lg:pb-24">
+    <div class="max-w-screen-md px-4 mx-auto">
+        <p class="mb-8 font-light text-center text-gray-500 lg:mb-16 dark:text-gray-400 sm:text-xl">
+            Do you have a question or an idea to talk about? Write me a message! I’m looking forward to it.
+            <br>
+            E-Mail: info [at] leonluethi.com
+        </p>
 
-    .label-container {
-        padding-top: 1.0rem;
-    }
 
-    input, textarea {
-        width: 100%;
-    }
+        <form onsubmit="sendContact(event)" class="space-y-8">
+            <div class="my-4">
+                <label for="emailInput" class="block mb-2 font-medium text-gray-900 text-md dark:text-gray-300">Enter
+                    your email address</label>
+                <input type="email" required
+                       class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-md rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-indigo-500 dark:focus:border-indigo-500 dark:shadow-sm-light"
+                       id="emailInput">
+            </div>
+            <div class="my-4">
+                <label for="subject"
+                       class="block mb-2 font-medium text-gray-900 text-md dark:text-gray-300">Subject</label>
+                <input type="text" required
+                       class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-md rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-indigo-500 dark:focus:border-indigo-500 dark:shadow-sm-light"
+                       id="subject">
+            </div>
+            <div class="my-4">
+                <label for="messageInput" class="form-label">Enter your message</label>
+                <textarea
+                        class="block p-2.5 w-full text-md text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-indigo-500 focus:border-indigo-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-indigo-500 dark:focus:border-indigo-500"
+                        required id="messageInput" rows="3"></textarea>
+            </div>
 
-    .status-label {
-        padding-right: 1.0rem;
-    }
+            <div class="my-4">
+                <label class="block mb-2 font-medium text-gray-900 text-md dark:text-gray-300">Please enter the result
+                    of the following complex calculation</label>
+                <label for="captcha" class="block mb-2 font-medium text-gray-900 text-md dark:text-gray-300"
+                       id="captcha-task">1 + 2</label>
+                <input type="text" required
+                       class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-md rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-indigo-500 dark:focus:border-indigo-500 dark:shadow-sm-light"
+                       id="captcha">
+            </div>
 
-    .successful {
-        color: #78E2A0;
-    }
+            <div class="mb-3 submit-button">
+                <label for="captcha" class="block mb-2 font-medium text-gray-900 text-md dark:text-gray-300"
+                       id="status-label"></label>
+                <button type="submit"
+                        class="px-5 py-3 font-bold text-center text-white bg-indigo-600 rounded-lg text-md sm:w-fit hover:bg-indigo-800 focus:ring-4 focus:outline-none focus:ring-indigo-300 dark:bg-indigo-600 dark:hover:bg-indigo-700 dark:focus:ring-indigo-800"
+                        id="submit-button">Submit
+                </button>
+            </div>
+        </form>
 
-    .failure {
-        color: red;
-    }
 
-    .submit-button {
-        padding-top: 0.5rem;
-        display: flex;
-        justify-content: flex-end;
-        align-items: baseline;
-    }
-</style>
-<form onsubmit="sendContact(event)">
-    <div class="mb-3 label-container">
-        <label for="emailInput" class="form-label">Enter your email address</label>
     </div>
-    <div class="mb-3">
-        <input type="email" required class="form-control" id="emailInput">
-    </div>
-    <div class="mb-3 label-container">
-        <label for="subject" class="form-label">Subject</label>
-    </div>
-    <div class="mb-3">
-        <select class="form-select" id="subject">
-            <option value="no-subject-chosen" selected>Click here to choose your subject</option>
-            <option value="general">General</option>
-            <option value="feedback">Feedback</option>
-            <option value="request-for-account-deletion">Delete my account</option>
-        </select>
-    </div>
-    <div class="mb-3 label-container">
-        <label for="messageInput" class="form-label">Enter your message</label>
-    </div>
-    <div class="mb-3">
-        <textarea class="form-control" required id="messageInput" rows="3"></textarea>
-    </div>
+</section>
 
-    <div class="mb-3 label-container">
-        <label class="form-label">Please enter the result of the following complex calculation</label>
-    </div>
-    <div class="mb-3 label-container">
-        <label for="captcha" class="form-label" id="captcha-task">1 + 2</label>
-    </div>
-    <div class="mb-3">
-        <input type="text" required class="form-control" id="captcha">
-    </div>
-
-    <div class="mb-3 submit-button">
-        <label for="captcha" class="form-label status-label" id="status-label"></label>
-        <button type="submit" class="btn btn-primary" id="submit-button">Submit</button>
-    </div>
-</form>
 <script>
 
     let n1 = -1;
