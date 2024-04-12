@@ -5,13 +5,9 @@ author: Leon
 authorimage: images/global/leon-cover.webp
 featured_image: images/posts/sandcastle.jpg
 tags:
-  - proxmox
+  - hypervisor
   - server
-  - hp-server
-  - homelab
-keywords:
-  - Homelab
-  - Server
+  - network
 summary: Setup an own homelab environment, for training purposes ;-)
 description: 'Setup an own homelab environment, for training purposes ;-)'
 showFullContent: false

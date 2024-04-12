@@ -70,12 +70,12 @@ params:
       The latter describes my way of dealing with progress. I always want to try out new technologies but also adopt tried and tested ones."
       - text: "In my opinion, a healthy mix is the key to any successful project. Do not reinvent the wheel, but check whether a new approach leads to success more efficiently."
   p3:
-    heading: "Leon's projects"
+    heading: "My projects"
     image: "images/pages/leon-look-bottom.webp"
     content:
       - text: "If you are interested in my projects and want to know more about what they are and what technologies they involve, take a look at my project page."
     links:
-      - text: Take a look at my projects
+      - text: Project overview
         url: "/projects"
     logos:
       - identifier: a
