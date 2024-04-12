@@ -1,6 +1,6 @@
 ---
 title: Network - Homelab Setup
-date: '2023-02-26T00:00:00.000Z'
+date: '2024-03-01T00:00:00.000Z'
 author: Leon
 authorimage: images/global/leon-cover.webp
 featured_image: images/posts/sandcastle.jpg

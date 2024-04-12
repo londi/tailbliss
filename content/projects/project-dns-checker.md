@@ -1,6 +1,6 @@
 ---
 title: "Project - DNS Checker"
-date: "2023-03-18"
+date: "2024-03-18"
 author: "Leon"
 authorimage: images/global/leon-cover.webp
 featured_image: images/projects/squirrel.jpg

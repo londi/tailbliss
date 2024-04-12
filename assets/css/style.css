@@ -3587,6 +3587,12 @@ EmojiSymbols;
   color: white !important;
 }
 
+.kofi-button-container {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
 /* Custom CSS end */
 
 :is(.dark .dark\:prose-invert) {
