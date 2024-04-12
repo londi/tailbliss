@@ -47,6 +47,7 @@ markup:
 
 params:
   author: Leon
+  title: Leon Lüthi
   authorimage: ../assets/images/global/leon-cover.webp
   og_image: "/images/pages/leon-cover.webp"
   moto: "Personal blog and project showroom"
@@ -59,7 +60,7 @@ params:
     image: "images/pages/leon-triangle.webp"
     content:
       - text: "Let me introduce myself. I work as a software engineer and study part-time applied computer sciences."
-      - text: "I develop and tinker with IT-related projects not only in my job but also in my free time. On of my favorite topics are web / app development as well as server technologies."
+      - text: "I develop and tinker with IT-related projects not only in my job but also in my free time. One of my favorite topics are web / app development as well as server technologies."
       - text: "Beside this I work as a vocational trainer (aka 'Berufsbildner') and mentor a couple of apprentices."
   p2:
     heading: "Enjoy every new wave"

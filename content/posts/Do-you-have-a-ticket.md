@@ -1,5 +1,5 @@
 ---
-title: Do you have a ticket?
+title: Do you have a ticket? [peppermint]
 date: 2024-01-03T22:00:00.000Z
 author: Leon
 authorimage: images/global/leon-cover.webp
@@ -14,6 +14,7 @@ tags:
 keywords:
   - support
   - ticket-tool
+  - peppermint
 summary: Self hosted ticketing tool
 description: >-
   Even a small project can escalate quickly. To capture all your ideas and bugs,

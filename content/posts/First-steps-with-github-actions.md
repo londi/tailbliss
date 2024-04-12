@@ -1,5 +1,5 @@
 ---
-title: Automate the website deployment
+title: Automate the website deployment [github actions]
 date: 2023-04-04T22:00:00.000Z
 author: Leon
 authorimage: images/global/leon-cover.webp
@@ -10,8 +10,6 @@ imgAuthorUrl: 'https://www.flaticon.com/free-animated-icons/cable-car-cabin'
 imgSource: Flaticon
 imgSourceUrl: 'https://www.flaticon.com/'
 tags:
-  - pipeline
-keywords:
   - github-actions
   - pipeline
   - tinacms

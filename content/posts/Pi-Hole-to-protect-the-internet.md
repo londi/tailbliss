@@ -1,5 +1,5 @@
 ---
-title: Pi Hole to protect your network
+title: Pi Hole to protect your network [pi-hole]
 date: 2023-08-31T22:00:00.000Z
 author: Leon
 authorimage: images/global/leon-cover.webp
@@ -10,11 +10,10 @@ imgAuthorUrl: 'https://openai.com/dall-e-3'
 imgSource: 'https://openai.com/dall-e-3'
 imgSourceUrl: 'https://openai.com/dall-e-3'
 tags:
-  - network
-keywords:
   - adblocking
   - filter
   - network
+  - pi-hole
 summary: Not just for adblocking... also for malicious domains
 description: Not just for adblocking... also for malicious domains
 showFullContent: false

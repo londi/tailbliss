@@ -1,5 +1,5 @@
 ---
-title: Monitor your services
+title: Monitor your services [uptime kuma]
 date: 2024-01-01T22:00:00.000Z
 author: Leon
 authorimage: images/global/leon-cover.webp
@@ -11,9 +11,8 @@ imgSource: 'https://openai.com/dall-e-3'
 imgSourceUrl: 'https://openai.com/dall-e-3'
 tags:
   - monitoring
-keywords:
-  - monitoring
   - network
+  - uptime-kuma
 summary: Get notified if something goes down
 description: Get notified if something goes down
 showFullContent: false

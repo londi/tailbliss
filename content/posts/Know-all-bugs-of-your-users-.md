@@ -1,5 +1,5 @@
 ---
-title: 'Know all bugs of your users '
+title: 'Know all bugs of your users [sentry]'
 date: 2024-02-10T23:00:00.000Z
 author: Leon
 authorimage: images/global/leon-cover.webp
@@ -12,8 +12,7 @@ imgSourceUrl: 'https://openai.com/dall-e-3'
 tags:
   - apps
   - monitoring
-keywords:
-  - monitoring
+  - sentry
 summary: Get informed about your user's bug journey in your applications
 description: Get informed about your user's bug journey in your applications
 showFullContent: false
