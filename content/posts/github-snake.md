@@ -20,7 +20,7 @@ hideComments: true
 
 Github offers the ability to show a custom Welcome Screen by adding a `README.md`-File 
 in a repository that is called like your github handle. 
-In my case the repo has to be called ["londi"](https://github.com/londi/londi).
+In my case the repo has to be called [londi](https://github.com/londi/londi).
 
 It is typically to describe yourself, write about your interests and link to your favorite repositories. 
 In addition, why not adding something special?

@@ -140,10 +140,10 @@ menu:
       name: Blog
       url: /posts/
       weight: 30
-#    - identifier: categories
-#      pre: dropdown
-#      name: Categories
-#      weight: 30
+    - identifier: biblio
+      name: Biblio
+      url: /biblio/
+      weight: 40
 #    - identifier: dropdown
 #      pre: complexdropdown
 #      name: Dropdown
@@ -189,9 +189,9 @@ menu:
       name: Blog
       url: /posts/
       weight: 20
-#    - identifier: news
-#      name: News
-#      url: /categories/news/
+#    - identifier: biblio
+#      name: Biblio
+#      url: /biblio/
 #      weight: 30
 #    - identifier: prose
 #      name: Prose

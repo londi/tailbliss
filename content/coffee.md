@@ -15,6 +15,6 @@ You can also send me a [message](/contact) if you have a question or an idea for
 {{< rawhtml >}}
 
 <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
-<script type='text/javascript'>kofiwidget2.init('Send me a coffee', '#78e2a0', 'D1D8JRNPU');kofiwidget2.draw();</script>
+<script type='text/javascript'>kofiwidget2.init('Send me a coffee', '#7e3ed1', 'D1D8JRNPU');kofiwidget2.draw();</script>
 
 {{< /rawhtml >}}
