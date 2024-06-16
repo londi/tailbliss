@@ -35,7 +35,7 @@ And that's exactly what I've done. An animated WatchFace for Garmin Smartwatches
 
 # Programming and stuff
 
-So in short: I have developed a watch face for garmin smartwatches that shows the pedro raccoon dancing in circles beside the time.
+So in short: I have developed a watch face for garmin smartwatches that shows the pedro raccoon dancing in circles and showing the time.
 
 ![Pedro Watchface](/images/projects/racoon-pedro.gif)
 

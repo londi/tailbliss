@@ -1,0 +1,155 @@
+<section class="lg:pb-24">
+    <div class="max-w-screen-md px-4 mx-auto">
+        <p class="mb-8 font-light text-center text-gray-500 lg:mb-16 dark:text-gray-400 sm:text-xl">
+            Do you have a question or an idea to talk about? Write me a message! I’m looking forward to it.
+            <br>
+            E-Mail: leon [at] leonluethi.com
+        </p>
+
+
+        <form onsubmit="sendContact(event)" class="space-y-8">
+            <div class="my-4">
+                <label for="nameInput" class="block mb-2 font-medium text-gray-900 text-md dark:text-gray-300">Dein Name</label>
+                <input type="name" required
+                       class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-md rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-indigo-500 dark:focus:border-indigo-500 dark:shadow-sm-light"
+                       id="nameInput">
+            </div>
+            <div class="my-4">
+                <label for="persons"
+                       class="block mb-2 font-medium text-gray-900 text-md dark:text-gray-300">Anzahl Personen</label>
+                <input type="text" required
+                       class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-md rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-indigo-500 dark:focus:border-indigo-500 dark:shadow-sm-light"
+                       id="persons">
+            </div>
+
+            <div class="my-4">
+                <fieldset>
+                    <legend>Daten:</legend>
+
+                    <div>
+                        <input
+                                class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-md rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-indigo-500 dark:focus:border-indigo-500 dark:shadow-sm-light"
+                                type="checkbox"
+                                id="scales" name="scales" />
+                        <label for="scales">27. - 28. Juli</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="horns" name="horns" />
+                        <label for="horns">03. - 04. August</label>
+                    </div>
+                </fieldset>
+            </div>
+
+
+            <div class="my-4">
+                <label for="commentInput" class="form-label">Enter your message</label>
+                <textarea
+                        class="block p-2.5 w-full text-md text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-indigo-500 focus:border-indigo-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-indigo-500 dark:focus:border-indigo-500"
+                        required id="commentInput" rows="3"></textarea>
+            </div>
+
+            <div class="my-4">
+                <label class="block mb-2 font-medium text-gray-900 text-md dark:text-gray-300">Please enter the result
+                    of the following complex calculation</label>
+                <label for="captcha" class="block mb-2 font-medium text-gray-900 text-md dark:text-gray-300"
+                       id="captcha-task">1 + 2</label>
+                <input type="text" required
+                       class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-md rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-indigo-500 dark:focus:border-indigo-500 dark:shadow-sm-light"
+                       id="captcha">
+            </div>
+
+            <div class="mb-3 submit-button">
+                <label for="captcha" class="block mb-2 font-medium text-gray-900 text-md dark:text-gray-300"
+                       id="status-label"></label>
+                <button type="submit"
+                        class="px-5 py-3 font-bold text-center text-white bg-indigo-600 rounded-lg text-md sm:w-fit hover:bg-indigo-800 focus:ring-4 focus:outline-none focus:ring-indigo-300 dark:bg-indigo-600 dark:hover:bg-indigo-700 dark:focus:ring-indigo-800"
+                        id="submit-button">Submit
+                </button>
+            </div>
+        </form>
+
+
+    </div>
+</section>
+
+<script>
+
+    let n1 = -1;
+    let n2 = -1;
+
+    addEventListener("load", onLoad);
+
+    function getRandomArbitrary(min, max) {
+        return parseInt(Math.random() * (max - min) + min);
+    }
+
+    function onLoad(ev) {
+        n1 = getRandomArbitrary(1, 10);
+        n2 = getRandomArbitrary(5, 10);
+        document.getElementById('captcha-task').innerText = `${n1} + ${n2}`;
+    }
+
+    async function sendContact(ev) {
+        ev.preventDefault();
+
+        const senderEmail = document.getElementById('emailInput').value;
+        const senderSubject = document.getElementById('subject').value;
+        const senderMessage = document.getElementById('messageInput').value;
+        const captcha = document.getElementById('captcha').value;
+
+        if (parseInt(captcha) !== n1 + n2) {
+            // alert('The calculation is wrong.');
+            document.getElementById('status-label').innerText = "The calculation is wrong.";
+            document.getElementById('status-label').classList.remove("successful");
+            document.getElementById('status-label').classList.add("failure");
+            return;
+        }
+
+        // Disable submit button
+        document.getElementById('submit-button').disabled = true
+
+        const webhookBody = {
+            message: senderMessage,
+            fields: [
+                {
+                    name: 'email',
+                    value: senderEmail
+                },
+                {
+                    name: 'subject',
+                    value: senderSubject
+                }
+            ],
+            origin: 'biblio at leonluethi.com'
+        };
+
+        // Congrats! You've found the webhook url of this form!
+        // If you want you can send me a custom message ;-)
+        const webhookUrl = 'https://thonny.strubli.com/discord';
+
+        const response = await fetch(webhookUrl, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(webhookBody),
+        });
+
+        if (response.ok) {
+            // alert('Message sent!');
+            document.getElementById('status-label').innerText = "message sent.";
+            document.getElementById('status-label').classList.add("successful");
+            document.getElementById('status-label').classList.remove("failure");
+        } else {
+            // alert('There was an error! Try again later.');
+            document.getElementById('status-label').innerText = "There was an error! Try again later.";
+            document.getElementById('status-label').classList.remove("successful");
+            document.getElementById('status-label').classList.add("failure");
+        }
+
+        // Enable submit button
+        document.getElementById('submit-button').disabled = false
+    }
+
+</script>
